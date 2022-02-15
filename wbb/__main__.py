@@ -107,7 +107,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Updates",
-                url="https://t.me/nbzoning",
+                url="https://t.me/wibucringe00",
             ),
         ],
         [
@@ -141,7 +141,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="updates",
-                url="https://t.me/nbzoning",
+                url="https://t.me/wibucringe00",
             ),
         ],
         [
@@ -157,7 +157,7 @@ keyboard = InlineKeyboardMarkup(
 @app.on_message(filters.command("start"))
 async def start(_, message):
     if message.chat.type != "private":
-        return await message.reply_photo(photo="https://telegra.ph/file/84cc269137d96c7908b37.jpg",
+        return await message.reply_photo(photo="https://telegra.ph/file/ea949f74f669ea8f9313a.jpg",
             caption="Pm Me For More Details.", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
@@ -180,7 +180,7 @@ async def start(_, message):
                 reply_markup=keyb,
             )
     else:
-        await message.reply_photo(photo="https://telegra.ph/file/84cc269137d96c7908b37.jpg",
+        await message.reply_photo(photo="https://telegra.ph/file/ea949f74f669ea8f9313a.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
